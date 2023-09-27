@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Declaring variables using let</h2>
+
+    <p id="let"></p>
+    <script>
+        let x = 20;  /* Redeclaring variable using let inside the block
+                        will not redeclare variable outside block */
+
+        {
+            let x = 30;
+        }
+
+        document.getElementById('let').innerHTML = x;
+        
+    </script>
+    
+</body>
+</html>
