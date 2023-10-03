@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<p>Calling function that convert fahrenheit to celsius:</p>
+
+<p id="temp"></p>
+
+<script>
+    function toCelsius(f) {
+        return (5/9) * (f-32);
+    }
+
+    let value = toCelsius(77);
+    document.getElementById("temp").innerHTML = value;
+</script>
+<body>
+    
+</body>
+</html>
