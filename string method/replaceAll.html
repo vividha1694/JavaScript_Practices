@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="all"></p>
+    
+    <script>
+        let text = "I love coffee. Coffee is very easy to make."
+        text = text.replaceAll(/Coffee/gi,"Tea"); //  specify a regular expression instead of string to be replace.
+        
+        document.getElementById("all").innerHTML = text;
+
+    </script>
+</body>
+</html>
