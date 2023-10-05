@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="obj"></p>
+
+    <p id="obj1"></p>
+
+    <script>
+        let x = new String("John"); // js objects cannot be compared
+        let y = new String("John");
+
+        document.getElementById("obj").innerHTML = (x == y); // always return false
+        document.getElementById("obj1").innerHTML = (x === y);
+    </script>
+    
+</body>
+</html>
