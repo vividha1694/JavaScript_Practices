@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ <button onclick="myFunction()">Click</button> 
+ <button onclick="myFunction1()">Click</button> 
+
+  <p id="upper">Hello World!!!!</p>
+  <p id="lower">Hello World!!!!</p>
+
+  <script>
+    function myFunction() {
+        let text = document.getElementById("upper").innerHTML;
+        document.getElementById("upper").innerHTML = text.toUpperCase();
+    }
+    function myFunction1() {
+        let text = document.getElementById("lower").innerHTML;
+        document.getElementById("lower").innerHTML = text.toLowerCase();
+    }
+  </script>
+    
+</body>
+</html>
