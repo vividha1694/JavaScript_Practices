@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+ <h3>Js Slice method</h3>
+    <p id="slice"></p>
+    <p id="slice1"></p>
+    <p id="slice2"></p>
+
+<script>
+    let text = "apple, banana, kiwi, orange";
+    let part = text.slice(7,19);  // slice(start,end)
+    let part1 = text.slice(7);
+    let part2 = text.slice(-12);
+    document.getElementById("slice").innerHTML = part;
+    document.getElementById("slice1").innerHTML = part1;
+    document.getElementById("slice2").innerHTML = part2;
+</script>
+    
+</body>
+</html>
