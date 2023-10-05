@@ -2,13 +2,17 @@
 <html>
 <body>
   
-    <p>string and object compared</p>
+    <p>string and object can be compared</p>
 
     <p id="compare"></p>
+
+    <p id="type"></p>
     <script>
-       let x = "John";
-       let y = new String("John");
+       let x = "John"; // x is string
+       let y = new String("John"); // y is object
        document.getElementById("compare").innerHTML = (x == y);
+       document.getElementById("type").innerHTML = (x === y);
+
     </script>
 
 </body>
