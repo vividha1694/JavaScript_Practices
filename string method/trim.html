@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="trim"></p>
+
+    <script>
+        let text1 = "    Hello World!   ";
+        let text2 = text1.trim();  /* & trimStart() remove white space from start only
+                                        trimend() remove from end only*/
+                                        
+        document.getElementById("trim").innerHTML = 
+        "Length text1 = " + text1.length +  "<br>Length text2 = " + text2.length;
+
+    </script>
+  
+</body>
+</html>
