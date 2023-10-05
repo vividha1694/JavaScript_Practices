@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="myFunction()">click</button>
+    <button onclick="myFunction1()">click</button>
+    <button onclick="myFunction2()">click</button>
+    <button onclick="myFunction3()">click</button>
+
+    <p id="rep">Please visit here!</p>
+    <p id="rep1">Please visit here!</p>
+    <p id="rep2">Please visit Microsoft!</p>
+    <p id="rep3">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+        function myFunction() {
+            let text = document.getElementById("rep").innerHTML;
+            document.getElementById("rep").innerHTML = text.replace("here","Microsoft!");
+        }// replace() method replaces only first match
+        function myFunction1() {
+            let text1 = document.getElementById("rep1").innerHTML;
+            document.getElementById("rep1").innerHTML = text1.replace(/HERE/i,"Microsoft!");
+        }// replace() method is case sensitive
+        function myFunction2() {
+            let text = document.getElementById("rep2").innerHTML;
+            document.getElementById("rep2").innerHTML = text.replace(/MICROSOFT/i,"here!");
+        }// i flag (insensitive)
+        function myFunction3() {
+            let text1 = document.getElementById("rep3").innerHTML;
+            document.getElementById("rep3").innerHTML = text1.replace(/Microsoft/g,"NGPIT");
+        }// g flag (global match)
+
+    </script>    
+</body>
+</html>
