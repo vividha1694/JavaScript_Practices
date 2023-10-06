@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="index"></p>
+    <p id="index1"></p>
+
+    <script>
+        let text = "Please locate where locate occurs!";
+        let index = text.indexOf("locate");// return position of first occurence
+        let index1 = text.lastIndexOf("locate");// last occurence
+                                                /* both return -1 if text not found */
+        document.getElementById("index").innerHTML = index;
+        document.getElementById("index1").innerHTML = index1;
+    </script>
+
+</body>
+</html>
