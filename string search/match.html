@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="match"></p>
+
+    <script>
+        let text = "The rain in SPAIN stays mainly in the plain";
+        const myArr = text.match(/ain/gi); /* "ain" = 1 ain
+                                              /ain/i = 1 ain
+                                              /ain/g = 3 ain ain ain */
+                                              
+        document.getElementById("match").innerHTML = myArr.length + " " + myArr;
+    </script>
+    
+</body>
+</html>
