@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="match"></p>
+
+    <script>
+        let text = "I love coffee. Coffee is very easy to make.";
+        const iterator = text.matchAll(/coffee/gi);
+
+        document.getElementById("match").innerHTML = Array.from(iterator);
+    </script>
+    
+</body>
+</html>
