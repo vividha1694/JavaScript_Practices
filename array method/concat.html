@@ -2,12 +2,15 @@
 <html>
     <body>
         <p id="concat"></p>
+        <p id="concat1"></p>
 
         <script>
             const fruit = ["apple", "orange", "kiwi"];
             const veg = ["potato", "tomato"];
             const all = fruit.concat(veg);
+            const add = all.concat("ginger");
 
             document.getElementById("concat").innerHTML = all;
+            document.getElementById("concat1").innerHTML = add;
 
         </script>
