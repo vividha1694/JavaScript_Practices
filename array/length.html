@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
+    <button onclick="myFunction()">Click</button>
     <p id="len"></p>
 
     <script>
-        const fruits = ["Apple", "Banana", "Orange","Mango"];
-        let size = fruits.length;
-        document.getElementById("len").innerHTML = size;
+        const fruits = ["Apple", "Banana", "Orange",];
+        document.getElementById("len").innerHTML = fruits;
+
+        function myFunction() {
+            fruits[fruits.length] = "Lemon";
+            document.getElementById("len").innerHTML = fruits;
+            
+        }
     </script>
     
 </body>
