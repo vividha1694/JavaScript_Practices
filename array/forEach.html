@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="each"></p>
+
+    <script>
+        const fruits = ["Apple", "Mango", "Banana", "Orange"];
+
+        let text = "<ul>";
+            fruits.forEach(myFunction);
+            text += "</ul>";
+
+            document.getElementById("each").innerHTML = text;
+
+            function myFunction(value) {
+                text += "<li>" + value + "</li>";
+            }
+    </script>
+    
+</body>
+</html>
