@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="sort"></p>
+    <p id="sort1"></p>
+
+    <script>
+        const points = [50, 20, 45, 70, 90, 100];
+        document.getElementById("sort").innerHTML = points;
+
+        points.sort(function(a,b) {return a - b});
+        document.getElementById("sort1").innerHTML = points;
+    </script>
