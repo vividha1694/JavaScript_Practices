@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="rev"></p>
+    <p id="rev1"></p>
+
+    <script>
+        const color = ["red", "blue", "green","yellow"];
+        document.getElementById("rev").innerHTML = color;
+
+        color.sort();
+        color.reverse();
+        document.getElementById("rev1").innerHTML = color;
+    </script>
+</body>
+</html>
