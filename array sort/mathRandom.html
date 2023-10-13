@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button onclick="myFunction()">clilck it</button>
+    <p id="random"></p>
+
+    <script>
+        const points = [10, 50, 40, 66, 88];
+        document.getElementById("random").innerHTML = points;
+
+        function myFunction() {
+            points.sort(function(){return 0.5 - Math.random()});
+            document.getElementById("random").innerHTML = points;
+        }
+    </script>
+</body>
+</html>
+    
