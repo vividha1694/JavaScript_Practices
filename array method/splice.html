@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const fruits = ["apple","mango","kiwi","banana"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        fruits.splice(3, 1 , "lemon", "orange");
+        document.getElementById("demo1").innerHTML = fruits;
+    </script>
+</body>
+</html>
