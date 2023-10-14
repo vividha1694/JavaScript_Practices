@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="for"></p>
+
+<script>
+    const numbers = [45, 56, 32, 12, 78];
+
+    let txt = "";
+    numbers.forEach(myFunction);
+    document.getElementById("for").innerHTML = txt;
+
+    function myFunction(value, index, array) {
+    txt += value + "<br>";
+}
+</script>
+</body>
+</html>
