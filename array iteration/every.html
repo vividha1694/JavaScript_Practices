@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="every"></p>
+
+    <script>
+        const numbers = [33,22,11,55,77];
+        let allOver35 = numbers.every(myFunction);
+
+        document.getElementById("every").innerHTML = "All is over 35 " + allOver35;
+
+        function myFunction(value) {
+            return value > 10;
+        }
+    </script>
+</body>
+</html>
