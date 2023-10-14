@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="check"></p>
+
+    <script>
+        const numbers = [22,32,41,44,56,77];
+        let someOver25 = numbers.some(myFunction);
+
+        document.getElementById("check").innerHTML = "Sum over 25 is " + someOver25;
+
+        function myFunction(value) {
+            return value > 25;
+        }
+    </script>
+</body>
+</html>
