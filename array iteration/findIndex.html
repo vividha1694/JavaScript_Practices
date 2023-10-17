@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="find"></p>
+
+<script>
+const numbers = [5,12,34,56,78,90];
+
+document.getElementById("find").innerHTML =
+"First number over 30 has index " + numbers.findIndex(myFunction);
+
+function myFunction(value) {
+  return value > 30;
+}
+</script>
+
+</body>
+</html>
