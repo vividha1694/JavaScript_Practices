@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p id="find"></p>
+
+    <script>
+        const numbers = [4,6,7,19,32,80];
+        let first = numbers.find(myFunction);
+
+        document.getElementById("find").innerHTML = "First number over 20 is " + first;
+
+        function myFunction(value) {
+            return value > 20;
+        }
+    </script>
+</body>
+</html>
