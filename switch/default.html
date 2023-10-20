@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="ok"></p>
+
+        <script>
+            let text;
+            switch (new Date().getDate()) {
+                case 6:
+                    text = "Today is Saturday";
+                    break;
+                    case 0:
+                        text = "Today is Sunday";
+                        break;
+                        default:
+                            text = "Looking forward to the weekend";
+            }
+            document.getElementById("ok").innerHTML = text;
+        </script>
+
+    </body>
+</html>
