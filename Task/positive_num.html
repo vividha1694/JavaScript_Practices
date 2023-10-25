@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+
+        <script>
+            const arr1 = [];
+            
+            function myFunction(arr) {
+                for ( let i = 0; i < arr.length; i++) {
+                    if (arr[i]>= 0) {
+                    arr1.push(arr[i]);
+      
+                    }
+                }
+            }
+            const arr = [5,7,8,2,9,-3,-2,-5,-4];
+            myFunction(arr);
+            document.getElementById("num").innerHTML = arr1;
+            
+        </script>
+    </body>
+</html>
