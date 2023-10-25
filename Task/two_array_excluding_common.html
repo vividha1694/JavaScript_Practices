@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+
+        <script>
+            const arr = [4,6,9,3,7];
+            const arr1 = [9,5,2,6,1];
+            const arr2 =[];
+            
+            
+            for (let x of arr) {
+                if (!(arr1.includes(x))) {
+                  arr2.push(x);
+                }
+            }
+            for (let x of arr1) {
+                if (!(arr.includes(x))) {
+                    arr2.push(x);
+                }
+            }
+         document.getElementById("num").innerHTML = arr2;
+            
+        </script>
+    </body>
+</html>
