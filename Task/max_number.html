@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+        <script>
+            const arr = [23,45,66,32,88,99,102,144];
+
+            document.getElementById("num").innerHTML = myArrayMax(arr);
+
+            function myArrayMax(arr) {
+                return Math.max.apply(null,arr);
+            }
+        </script>
+    </body>
+</html>
