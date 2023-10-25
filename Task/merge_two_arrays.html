@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+           const arr = [1,2,3,5,7];
+           const arr1 = [7,8,9,6,4];
+           let num;
+           const arr2 = [];
+
+           function myFunction(arr,arr2) {
+              num = arr.concat(arr1);
+              arr2.push(num);
+           }
+           myFunction(arr,arr2);
+           document.getElementById("demo").innerHTML = arr2;
+        </script>
+    </body>
+</html>
