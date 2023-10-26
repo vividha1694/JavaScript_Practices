@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+
+        <script>
+            const person = {fname:"john", lname:"doe", age:44};
+
+            let txt = "";
+            for (let x in person) {
+                txt += person[x] + " "; 
+            }
+            document.getElementById("num").innerHTML = txt;
+        </script>
+
+    </body>
+</html>
