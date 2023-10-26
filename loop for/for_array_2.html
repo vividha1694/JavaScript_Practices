@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+
+        <script>
+            const colors = ["red","blue","black","green"];
+            let i = 1;
+            let len = colors.length;
+            let text = "";
+            
+            for (; i < len;) {
+                text += colors[i] + "<br>";
+                i++;
+            }
+            document.getElementById("num").innerHTML = text;
+        </script>
+    </body>
+</html>
