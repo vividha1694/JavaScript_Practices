@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+
+        <script>
+            const cars = ["BMW", "Volvo", "Saab", "Ford"];
+            let i, len, text;
+            for (i = 0, len = cars.length, text = ""; i < len; i++) {
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("num").innerHTML = text;
+        </script>
+
+    </body>
+</html>
