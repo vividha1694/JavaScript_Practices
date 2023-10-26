@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+
+        <script>
+            const numbers = [23,55,78,90,100];
+
+            let txt = "";
+            for (let x in numbers) {
+                txt += numbers[x] + "<br>";
+            }
+            document.getElementById("num").innerHTML = txt;
+        </script>
+    </body>
+</html>
