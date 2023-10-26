@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="num"></p>
+
+        <script>
+            const numbers = [12,23,34,45,56,67,78,89];
+
+            let txt = "";
+            numbers.forEach(myFunction);
+            document.getElementById("num").innerHTML = txt;
+
+            function myFunction(value) {
+                txt += value + "<br>";
+            }
+        </script>
+    </body>
+</html>
