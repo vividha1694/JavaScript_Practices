@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="initial"></p>
+        <p id="after"></p>
+        <p id="swap"></p>
+        <p id="swap1"></p>
+
+        <script>
+            const num = ["1","2","3","4","5"];
+            document.getElementById("initial").innerHTML = num;
+            const num0 = num.join("");
+            document.getElementById("after").innerHTML = "Before swapping = " + num0;
+            const num1 = num.pop();
+            const num2 = num.shift();
+            num.push(num2);
+            num.unshift(num1);
+            document.getElementById("swap").innerHTML = num;
+            const num3 = num.join("");
+            document.getElementById("swap1").innerHTML = "After swapping = " + num3;
+        </script>
+
+    </body>
+</html>
