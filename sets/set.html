@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p id="demo"></p>
+        <p id="value"></p>
+        <p id="value1"></p>
 
         <script>
             const letters = new Set(["a","b","c","d"]);
 
-            document.getElementById("demo").innerHTML = letters.size;
+            const letters1 = new Set();
+            letters1.add("a");
+            letters1.add("b");
+            letters1.add("c");
+
+            document.getElementById("value").innerHTML = letters.size;
+            document.getElementById("value1").innerHTML = letters1.size;
         </script>
 
     </body>
