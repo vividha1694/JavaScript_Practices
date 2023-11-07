@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ 
+  <body>
+   
+<label for="number1">1st Number :</label>   
+<input type="text" id="number1"><br><br>
+<label for="number2">2nd Number :</label>
+<input type="text" id="number2"><br><br>
+<input type="button" value="Multiply" onclick="multiply()">
+<input type="button" value="Division" onclick="division()">
+
+
+<script>
+function multiply() {
+  var num1 = document.getElementById("number1").value;
+  var num2 = document.getElementById("number2").value;
+  var result = num1 * num2;
+  document.getElementById("result").innerHTML =" The result is :" + result;
+}
+function division() {
+  var num1 = document.getElementById("number1").value;
+  var num2 = document.getElementById("number2").value;
+  if (num2 === 0) {
+        document.getElementById("result").innerHTML = "Cannot divide by zero";
+      } else {
+  var result = num1 / num2;
+  document.getElementById("result").innerHTML ="The result is :" + result ;
+}
+}
+
+</script>
+<p id="result"></p>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script>
+
+var ch;
+function checkVowel() {
+  ch = document.getElementById("char").value;
+  
+  {
+if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+  document.write("<b>"+ch+"</b>" + " is a Vowel");
+
+else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+  document.write("<b>"+ch+"</b>" + " is a Vowel");
+
+else
+  document.write("<b>"+ch+"</b>" + " is a Consonant");
+  }
+}
+
+</script>
+
+</body>
+<p>Enter the Character: <input id="char"> &nbsp;<button onclick="checkVowel()">Check</button>
+
+</html>
