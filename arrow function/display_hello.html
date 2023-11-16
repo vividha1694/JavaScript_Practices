@@ -2,14 +2,23 @@
 <html>
     <body>
         <p id="demo"></p>
+        <p id="demo1"></p>
 
         <script>
             let hello = "";
 
             hello = () => {
-                return "Hello World";
+                return "Hello World!!!!!";
             }
             document.getElementById("demo").innerHTML = hello();
         </script>
+        <script>
+            let hello1 = "";
+            
+            hello1 = val => "Hello " + val;
+            
+            document.getElementById("demo1").innerHTML = hello1("Universe!!!");
+            </script>
+            
     </body>
 </html>
