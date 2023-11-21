@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const person = {
+                fname: "John",
+                lname: "Doe",
+                age:25,
+                eyecolor: "blue"
+            };
+            delete person.age;
+            person.nationality = "English";
+            document.getElementById("demo").innerHTML = 
+            person.fname + "is " + person.nationality + " ";
+        </script>
+    </body>
+</html>
