@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            function Person(first, last, age, eye) {
+                this.firstname = first;
+                this.lastname = last;
+                this.age = age;
+                this.eyeColor = eye;
+            }
+            const myFather = new Person("john","doe",50,"blue");
+
+            document.getElementById("demo").innerHTML = 
+            "My father is " + myFather.age + ".";
+        </script>
+    </body>
+</html>
