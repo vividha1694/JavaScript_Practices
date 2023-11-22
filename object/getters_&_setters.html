@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const obj = {counter : 5};
+            
+            Object.defineProperty(obj, "reset", {
+                get : function () {this.counter = 10;}
+            });
+            Object.defineProperty(obj, "increment", {
+                get : function () {this.counter++;}
+            });
+            Object.defineProperty(obj, "decrement", {
+                get : function () {this.counter--;}
+            });
+            Object.defineProperty(obj, "add", {
+                get : function () {this.counter += value;}
+            });
+            Object.defineProperty(obj, "subtract", {
+                get : function () {this.counter += value;}
+            });
+
+            obj.reset;
+            obj.add = 7;
+            obj.subtract = 9;
+            obj.increment;
+            obj.decrement;
+            document.getElementById("demo").innerHTML = obj.counter;
+        </script>
+    </body>
+</html>
