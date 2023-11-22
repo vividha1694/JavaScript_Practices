@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            const person = {
+                fname: "john",
+                lname: "doe",
+                language: "no",
+                set lang(value) {
+                    this.language = value;
+                }
+            };
+
+            person.lang = "en";
+
+            document.getElementById("demo").innerHTML = person.language;
+        </script>
+    </body>
+</html>
