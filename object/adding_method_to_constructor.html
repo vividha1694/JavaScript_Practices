@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            function Person(first,last,age) {
+                this.fname = first;
+                this.lname = last;
+                this.age = age;
+                this.name = function() {
+                    return this.fname + " " + this.lname;
+                }
+            }
+            const myFather = new Person("john","doe",50);
+
+            document.getElementById("demo").innerHTML = 
+            "My father is " + myFather.name();
+        </script>
+    </body>
+</html>
