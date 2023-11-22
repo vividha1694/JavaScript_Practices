@@ -9,11 +9,13 @@
                 this.lastname = last;
                 this.age = age;
                 this.eyeColor = eye;
+                this.nationality = "English"; //adding property to constructor
             }
             const myFather = new Person("john","doe",50,"blue");
+            const myMother = new Person("sally","rally",40,"gray");//object of same type created by calling constructor function with new keyword
 
             document.getElementById("demo").innerHTML = 
-            "My father is " + myFather.age + ".";
+            "My father is " + myFather.age + ". My mother is " + myMother.age + " & " + myMother.nationality;
         </script>
     </body>
 </html>
