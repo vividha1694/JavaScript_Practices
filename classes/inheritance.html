@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            class Car {
+                constructor(brand) {
+                    this.carname = brand;
+                }
+                present() {
+                    return 'I have a ' + this.carname;
+                }
+            }
+
+            class Model extends Car { //"extend" keyword to inherit all methods from another class
+                constructor(brand, mod) {
+                    super(brand);//"super" method to call the parent's constructor function
+                    this.model = mod;
+                }
+                show() {
+                    return this.present() + ', it is ' + this.model;
+                }
+            }
+            const myCar = new Model("ford","mustang");
+            document.getElementById("demo").innerHtml = myCar.show();
+        </script>
+    </body>
+</html>        
