@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button {
+                padding:20px;
+                background-color: orange;
+            }
+            p{
+                font-size:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" onclick="myFunction()">Count!</button>
+        <p id="demo">0</p>
+
+        <script>
+            const add = (function () {
+                let counter = 0;
+                return function () {counter += 1; return counter;}
+            })();
+
+            function myFunction() {
+                document.getElementById("demo").innerHTML = add();
+            }
+        </script>
+    </body>
+</html>            
