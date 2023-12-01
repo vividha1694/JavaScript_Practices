@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+                background-color: palevioletred;
+                font-size: 19px;
+            }
+            h3 {
+                margin-top: 10%;
+            }
+            input {
+                padding: 20px;
+            }
+            button {
+                background-color: blue;
+                padding: 15px 20px;
+                border: none;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Type a word in the Box</h3>
+        
+        <input type="text" id="wordInput"/><br><br>
+
+        <p id="lengthDisplay"></p><br>
+
+        <button onclick="wordLength()">Click to calculate Word Length</button>
+       
+
+        <script>
+            function wordLength() {
+                let word = document.getElementById("wordInput").value;
+                let length = word.length;
+                document.getElementById('lengthDisplay').innerText = length;
+            }
+        </script>
+    </body>
+</html>
+        
