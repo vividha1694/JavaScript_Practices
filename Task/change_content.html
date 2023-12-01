@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: coral;
+            color: midnightblue;
+        }
+
+        div {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        button {
+            margin-left: 45%;
+            margin-top: 10%;
+            background-color: chartreuse;
+            color: midnightblue;
+            padding: 15px;
+            border: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <button type="button" onclick="changeContent()">Generate Quotes</button>
+    <div id="contentContainer"></div>
+
+
+
+    <script>
+        const contentArray = [
+            {
+                quote: `Success is not final, failure is not fatal: Ts is the courage to continue that count.`,
+                author: `Winston Churchill`
+            },
+            {
+                quote: `Strive is not be success,but rather to be of value.`,
+                author: `Albert Einstein`
+            },
+            {
+                quote: `The only way to do great work is to love what you do.`,
+                author: `Steve Jobs`
+            },
+            {
+                quote: `Be the change you wish to see in world`,
+                author: `Mahatma Gandhi`
+            },
+            {
+                quote: `Believe you can and you are halfway there.`,
+                author: `Theodore Roosevelt`
+            }
+        ];
+        let currentIndex = 0;
+
+        function changeContent() {
+            const contentContainer = document.getElementById('contentContainer');
+
+            const currentContent = contentArray[currentIndex];
+            contentContainer.innerHTML = `<p>${currentContent.quote}</p><p>${currentContent.author}</p>`;
+            currentIndex = (currentIndex + 1) % contentArray.length;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
