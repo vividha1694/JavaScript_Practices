@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: blue;
+            }
+            div {
+                margin-left: 40%;
+                margin-top: 10%;
+                width: 300px;
+                text-align: center;
+                background-color: aliceblue;
+            }
+            button {
+                background-color: red;
+                padding: 20px;
+                border-radius: 4px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <button onclick="incrementCounter()">Click Me</button>
+            <p>You clicked the button <span id="count">0</span> times</p>
+
+            <script>
+                let counter = 0;
+
+                function incrementCounter() {
+                    counter++;
+
+                    document.getElementById('count').innerText = counter;
+                }
+            </script>
+        </div>
+    </body>
+</html>
