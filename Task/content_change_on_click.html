@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main_container {
+            display: block;
+            margin: 15px auto;
+            background: #efefef;
+            width: 300px;
+            height:500px;
+        }
+        button {
+            background-color: pink;
+            padding: 10px;
+        }
+        .block {
+            display: flex;
+            width: 100%;
+            height:100%;
+        }
+
+        .diva {
+            display: block;
+            width: 100%;
+            height:auto;
+            background-color: green;
+        }
+        .divb {
+            display: none;
+            width: 100%;
+            height:auto;
+            background-color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="button">
+            <button id="btn_diva">div 1</button>
+            <button id="btn_divb">div 2</button>
+        </div>
+        <div class="block">
+            <div class="diva" id="diva">
+
+            </div>
+            <div class="divb" id="divb">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn_diva = document.getElementById("btn_diva");
+        let btn_divb = document.getElementById("btn_divb");
+        let diva = document.getElementById("diva");
+        let divb = document.getElementById("divb");
+        btn_diva.addEventListener('click', () => {
+            diva.style.display = "block";
+            divb.style.display = "none";
+        });
+        btn_divb.addEventListener('click', () => {
+            diva.style.display = "none";
+            divb.style.display = "block";
+        });
+
+    </script>
+</body>
+
+</html>
