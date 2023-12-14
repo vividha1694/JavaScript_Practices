@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="text">Courses like :</p>
+        <script>
+           
+let texts = ["Courses like : C Programming","Courses like : React", "Courses like : Javascript"];
+
+let currentTextIndex = 0;
+
+
+setInterval(function() {
+  
+  let nextText = texts[currentTextIndex];
+
+  document.getElementById("text").textContent = nextText;
+
+  currentTextIndex++;
+
+  if (currentTextIndex >= texts.length) {
+    currentTextIndex = 0;
+  }
+}, 2000);
+        </script>
+    </body>
+</html>
