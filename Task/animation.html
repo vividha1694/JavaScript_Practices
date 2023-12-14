@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+  #container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+    overflow: hidden; /* Ensure the box stays within the container */
+  }
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+  }
+</style>
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id="container">
+  <div id="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let direction = "right";
+  let posX = 0;
+  let posY = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    switch (direction) {
+      case "right":
+        posX++;
+        if (posX >= 350) {
+          direction = "down";
+        }
+        break;
+      case "down":
+        posY++;
+        if (posY >= 350) {
+          direction = "left";
+        }
+        break;
+      case "left":
+        posX--;
+        if (posX <= 0) {
+          direction = "up";
+        }
+        break;
+      case "up":
+        posY--;
+        if (posY <= 0) {
+          direction = "right";
+        }
+        break;
+    }
+
+    
+    elem.style.left = posX + "px";
+    elem.style.top = posY + "px";
+  }
+}
+</script>
+
+</body>
+</html>
