@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .main {
+            width:800px;
+            margin: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+
+<head>
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="sliders">
+            <p style="color: green;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quis vero, harum maiores animi
+                vitae cumque similique inventore porro nulla qui, incidunt, provident nemo est esse veniam obcaecati
+                aspernatur officiis?</p>
+        </div>
+        <div class="sliders">
+            <p style="color: red;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dignissimos asperiores eligendi, rem
+                quisquam tempore, explicabo unde temporibus, libero eius culpa neque veniam sit minus omnis ad magnam
+                nemo aspernatur.</p>
+        </div>
+        <div class="sliders">
+            <p style="color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At accusamus molestiae voluptates tenetur,
+                saepe voluptatibus laborum, quas mollitia eos, soluta est? Necessitatibus, praesentium eos. Vitae,
+                laudantium velit! Aspernatur, sed dolorem?</p>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        change();
+
+        function change() {
+            var x = document.getElementsByClassName("sliders");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++;
+
+            if (index > x.length) {
+                index = 1;
+            }
+            x[index - 1].style.display = "block";
+
+            setTimeout(change, 2000);
+        }
+    </script>
+</body>
+
+</html>
