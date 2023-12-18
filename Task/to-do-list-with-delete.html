@@ -48,27 +48,36 @@
 <script>
   function addTask() {
     let taskInput = document.getElementById('taskInput');
+    console.log(taskInput);
     let taskList = document.getElementById('tasks');
+    console.log(taskList);
 
     if (taskInput.value.trim() === '') {
+      console.log(taskInput);
       alert('Please enter a task.');
       return;
     }
 
     let newTask = document.createElement('li');
+    console.log(newTask);
     newTask.textContent = taskInput.value;
 
     let deleteButton = document.createElement('button');
+    console.log(deleteButton);
     deleteButton.textContent = 'Delete';
+    console.log(deleteButton);
     deleteButton.onclick = function () {
       taskList.removeChild(newTask);
+      console.log(newTask);
     };
+
 
     newTask.appendChild(deleteButton);
     taskList.appendChild(newTask);
 
     taskInput.value = '';
   }
+  
 </script>
 
 </body>
